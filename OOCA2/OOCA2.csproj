@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +79,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedVans.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedCar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedShirt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueShoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueCar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueCar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueCar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueShirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellowShoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellowCar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellowShirt.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

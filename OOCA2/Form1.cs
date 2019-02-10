@@ -140,6 +140,9 @@ namespace OOCA2
             picbx_yellowCar.Visible = false;
             lbl_date.Visible = false;
             lbl_name.Text = "";
+            rdobtn_Blue.Checked = false;
+            rdobtn_red.Checked = false;
+            rdobtn_yellow.Checked = false;
         }
     }
 }

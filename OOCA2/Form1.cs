@@ -1,4 +1,6 @@
-﻿using System;
+﻿//this is my own work
+//Noah Vandervelden
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +16,7 @@ namespace OOCA2
     {
         public Form1()
         {
+            //this makes sure nothing is visible when the form starts
             InitializeComponent();
             picbx_blueCar.Visible = false;
             picbx_blueShirt.Visible = false;
@@ -40,6 +43,8 @@ namespace OOCA2
             picbx_yellowCar.Visible = false;
             lbl_date.Visible = false;
             lbl_name.Text = "";
+
+            //this is the if block for displaying items
             if (rdobtn_red.Checked && lstbx_inventory.GetSelected(0))
             {
                 picBx_redShoe.Visible = true;
@@ -77,6 +82,7 @@ namespace OOCA2
                 picbx_yellowShirt.Visible = true;
             }
 
+            //this is the if block for displaying the certain names of items
             if (chbx_name.Checked && rdobtn_red.Checked && lstbx_inventory.GetSelected(0))
             {
                 lbl_name.Text = "Red Shoe";
@@ -113,6 +119,7 @@ namespace OOCA2
             {
                 lbl_name.Text = "Yellow Car";
             }
+            //this is if statement for the date showing
             if (chbx_date.Checked)
             {
                 lbl_date.Visible = true;
